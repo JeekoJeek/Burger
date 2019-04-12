@@ -1,5 +1,16 @@
+<h1>Burger Wish List</h1>
+<div class="text-center">
+	<h2>New Burgers to Eat</h2>
+	<form class="create-form">
 
-	{{#each burgers}}
-		<p>Name: {{burger_name}}</p>
-		<button>Eat Now!</button>
-	{{/each}}
+		<div class="form-group">
+			<input type="text" id="burger" name="burger_name" placeholder="Burger Wish">
+		</div>
+
+		<button class="add-burger" type="submit">Add Burger</button>
+	</form>
+</div>
+{{#each burgers}}
+<p>Name: {{burger_name}}</p>
+<button class="devour">Eat Now!</button>
+{{/each}}
